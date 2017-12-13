@@ -33,7 +33,10 @@ public class Solution
 
         Collections.sort(visited, new SortbyRating());
 
-        visited.subList(4,visited.size()).clear();
+        if (N > visited.size())
+            return visited;
+        else
+            visited.subList(N,visited.size()).clear();
 
         return visited;
     }
@@ -81,7 +84,7 @@ public class Solution
         System.out.println( "Returned " + result.size() + " movie(s)" );
 
         for (Movie m : result){
-            System.out.println( m.getId() + "  "+ m.getRating());
+            System.out.println("Movie Id = " + m.getId() + "    Rating = " + m.getRating());
         }
     }
 }
