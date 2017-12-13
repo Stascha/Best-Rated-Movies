@@ -10,14 +10,6 @@ public class Solution
         // The first step is BFS (Breadth first search ),
         // then sort out all the movies in descending order by rating,
         // and finally take the first N
-        
-        class SortbyRating implements Comparator<Movie>{
-            // Used for sorting in descending order of Rating
-            public int compare(Movie a, Movie b){
-                return a.getRating() <  b.getRating() ?  1 : -1 ;
-
-            }
-        }
 
         Queue<Movie> q = new ArrayDeque<Movie>();
         ArrayList<Movie> visited = new ArrayList<Movie>();
