@@ -1,5 +1,7 @@
 /** Created by stasa on 18.5.17..   */
 
+import java.util.Comparator;
+
 class SortbyRating implements Comparator<Movie>{
       
       // Used for sorting in descending order of Rating
